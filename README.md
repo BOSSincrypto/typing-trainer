@@ -11,6 +11,9 @@ Built as pure HTML/CSS/JS and tuned for Android “Add to Home Screen”.
 ## Live
 - Demo: `https://bossincrypto.github.io/typing-trainer/`
 - Repo: `https://github.com/BOSSincrypto/typing-trainer`
+## Showcase
+![TypeSprint UI Preview](assets/media/ui-preview.png)
+![TypeSprint Typing Demo](assets/media/typing-demo.gif)
 
 ## Why this project feels premium
 - ⚡ Fast startup and tiny footprint (no build tool required)
@@ -53,6 +56,7 @@ On GitHub (one-time check):
 ## Automatic releases
 Release automation is configured with Release Please:
 - workflow: `.github/workflows/release-please.yml`
+- auto-merge workflow: `.github/workflows/auto-merge-release-pr.yml`
 - config: `release-please-config.json`
 - manifest: `.release-please-manifest.json`
 
@@ -69,12 +73,19 @@ Recommended commit style for clean semver bumps:
 ├─ app.js
 ├─ sw.js
 ├─ manifest.json
+├─ assets/media/
+│  ├─ ui-preview.png
+│  ├─ typing-demo.gif
+│  └─ social-preview.png
 ├─ icons/
 │  ├─ icon.svg
 │  ├─ icon-192.png
 │  ├─ icon-512.png
 │  └─ maskable-512.png
+├─ scripts/
+│  └─ generate_media.py
 └─ .github/workflows/
+   ├─ auto-merge-release-pr.yml
    ├─ deploy-pages.yml
    └─ release-please.yml
 ```

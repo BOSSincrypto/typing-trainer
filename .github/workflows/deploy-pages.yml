@@ -26,9 +26,10 @@ jobs:
 
       - name: Prepare static artifact
         run: |
-          mkdir -p _site/icons
+          mkdir -p _site/icons _site/assets
           cp index.html styles.css app.js sw.js manifest.json _site/
           cp icons/icon.svg icons/icon-192.png icons/icon-512.png icons/maskable-512.png _site/icons/
+          cp -r assets/media _site/assets/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
