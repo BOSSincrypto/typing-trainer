@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="TypeSprint icon">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10131a"/>
+      <stop offset="100%" stop-color="#0b0d11"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect x="72" y="140" width="368" height="240" rx="52" fill="#171c26" stroke="#232b39" stroke-width="8"/>
+  <g fill="url(#accent)">
+    <rect x="116" y="188" width="60" height="34" rx="12"/>
+    <rect x="190" y="188" width="60" height="34" rx="12"/>
+    <rect x="264" y="188" width="60" height="34" rx="12"/>
+    <rect x="338" y="188" width="60" height="34" rx="12"/>
+    <rect x="116" y="236" width="78" height="34" rx="12"/>
+    <rect x="208" y="236" width="96" height="34" rx="12"/>
+    <rect x="318" y="236" width="80" height="34" rx="12"/>
+    <rect x="116" y="284" width="282" height="42" rx="16"/>
+  </g>
+  <text x="256" y="440" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="54" font-weight="700" fill="#d8fbe8">TT</text>
+</svg>

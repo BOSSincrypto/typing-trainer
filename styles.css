@@ -1,0 +1,55 @@
+:root{
+  --bg:#0f1115;--panel:#181b22;--fg:#e6e8ee;--dim:#5b6273;
+  --ok:#4ade80;--bad:#f87171;--accent:#60a5fa;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+[hidden]{display:none!important}
+html,body{height:100%}
+body{
+  background:var(--bg);color:var(--fg);
+  font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  display:flex;flex-direction:column;
+  padding:max(8px,env(safe-area-inset-top)) 12px max(8px,env(safe-area-inset-bottom));
+  touch-action:manipulation;overscroll-behavior:none;
+}
+header{display:flex;justify-content:space-between;gap:8px;padding:4px 0 10px}
+.seg{display:flex;background:var(--panel);border-radius:10px;overflow:hidden}
+.seg button{
+  border:0;background:none;color:var(--dim);font:inherit;font-weight:600;
+  padding:8px 14px;cursor:pointer;
+}
+.seg button.on{background:var(--accent);color:#0b0d11}
+main{flex:1;display:flex;flex-direction:column;min-height:0}
+#hud{display:flex;justify-content:space-around;padding:6px 0 12px}
+#hud div{text-align:center}
+#hud b{display:block;font-size:26px;font-variant-numeric:tabular-nums}
+#hud span{font-size:12px;color:var(--dim);text-transform:uppercase;letter-spacing:.05em}
+#textBox{
+  background:var(--panel);border-radius:14px;padding:16px;
+  font-size:22px;line-height:1.7;letter-spacing:.02em;
+  word-break:break-word;user-select:none;cursor:text;
+  max-height:42vh;overflow:hidden;
+}
+#textBox span{color:var(--dim)}
+#textBox span.c{color:var(--ok)}
+#textBox span.w{color:var(--bad);text-decoration:underline}
+#textBox span.cur{
+  color:var(--fg);border-bottom:2px solid var(--accent);
+  animation:blink 1s step-end infinite;
+}
+@keyframes blink{50%{border-color:transparent}}
+#hidden{position:absolute;opacity:0;height:1px;width:1px;left:-9999px}
+#hint{text-align:center;color:var(--dim);padding-top:14px;font-size:14px}
+#screenDone{flex:1;display:flex;flex-direction:column;align-items:center;padding-top:8vh;gap:10px}
+#screenDone h2{font-size:44px;color:var(--ok)}
+#doneDetail{color:var(--dim)}
+#againBtn{
+  margin-top:10px;border:0;border-radius:12px;background:var(--accent);
+  color:#0b0d11;font:inherit;font-weight:700;padding:12px 34px;cursor:pointer;
+}
+#history{width:100%;max-width:340px;margin-top:24px;font-size:14px}
+#history div{
+  display:flex;justify-content:space-between;padding:7px 12px;
+  border-radius:8px;background:var(--panel);margin-bottom:6px;color:var(--dim);
+}
+#history b{color:var(--fg)}
