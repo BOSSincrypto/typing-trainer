@@ -11,9 +11,11 @@ Built as pure HTML/CSS/JS and tuned for Android “Add to Home Screen”.
 ## Live
 - Demo: `https://bossincrypto.github.io/typing-trainer/`
 - Repo: `https://github.com/BOSSincrypto/typing-trainer`
+
 ## Showcase
-![TypeSprint UI Preview](assets/media/ui-preview.png)
-![TypeSprint Typing Demo](assets/media/typing-demo.gif)
+Real screens from the running app:
+![TypeSprint Desktop](assets/media/showcase-desktop.png)
+![TypeSprint Mobile](assets/media/showcase-mobile.png)
 
 ## Why this project feels premium
 - ⚡ Fast startup and tiny footprint (no build tool required)
@@ -80,16 +82,14 @@ Recommended commit style for clean semver bumps:
 │  ├─ build.gradle
 │  └─ app/...
 ├─ assets/media/
-│  ├─ ui-preview.png
-│  ├─ typing-demo.gif
+│  ├─ showcase-desktop.png
+│  ├─ showcase-mobile.png
 │  └─ social-preview.png
 ├─ icons/
 │  ├─ icon.svg
 │  ├─ icon-192.png
 │  ├─ icon-512.png
 │  └─ maskable-512.png
-├─ scripts/
-│  └─ generate_media.py
 └─ .github/workflows/
    ├─ android-release-apk.yml
    ├─ auto-merge-release-pr.yml
