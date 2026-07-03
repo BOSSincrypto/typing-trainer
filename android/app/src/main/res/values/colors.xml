@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ts_background">#0F1115</color>
+    <color name="ts_surface">#181B22</color>
+    <color name="ts_primary">#60A5FA</color>
+</resources>

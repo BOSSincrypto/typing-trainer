@@ -57,8 +57,10 @@ On GitHub (one-time check):
 Release automation is configured with Release Please:
 - workflow: `.github/workflows/release-please.yml`
 - auto-merge workflow: `.github/workflows/auto-merge-release-pr.yml`
+- android apk workflow: `.github/workflows/android-release-apk.yml`
 - config: `release-please-config.json`
 - manifest: `.release-please-manifest.json`
+Each release is shipped with an Android APK asset (`TypeSprint-<tag>-android.apk`).
 
 Recommended commit style for clean semver bumps:
 - `feat: ...` → minor
@@ -73,6 +75,10 @@ Recommended commit style for clean semver bumps:
 ├─ app.js
 ├─ sw.js
 ├─ manifest.json
+├─ android/
+│  ├─ settings.gradle
+│  ├─ build.gradle
+│  └─ app/...
 ├─ assets/media/
 │  ├─ ui-preview.png
 │  ├─ typing-demo.gif
@@ -85,6 +91,7 @@ Recommended commit style for clean semver bumps:
 ├─ scripts/
 │  └─ generate_media.py
 └─ .github/workflows/
+   ├─ android-release-apk.yml
    ├─ auto-merge-release-pr.yml
    ├─ deploy-pages.yml
    └─ release-please.yml
